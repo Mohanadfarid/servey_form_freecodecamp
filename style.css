@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  /* border: 2px solid black; */
+  margin: 0;
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-attachment:fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f3f3f3;
+}
+body::before {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+  );
+  z-index: -1;
+  content: "";
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 34px;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 30px;
+  font-size: 22px;
+
+  text-align: center;
+}
+form p{
+  text-align: left;
+  margin :10px
+}
+
+form {
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: 5px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 20px;
+}
+.formController {
+
+}
+.formController_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.formController input,select {
+  width: 100%;
+  margin: 20px 0;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 0;
+  font-size: 16px;
+}
+.formController input:focus {
+  border: 0;
+  outline: 2px solid blue;
+}
+.formController input[type=radio],.formController input[type=checkbox]{
+  width:20px;
+  height: 20px;
+  margin: 0 10px;
+
+}
+.formController input[type=radio]:focus,.formController input[type=checkbox]:focus{
+outline: none;
+}
+.formController label  {
+
+  margin: 5px 0;
+}
+
+textarea {
+  font-size: 18px;
+  padding: 20px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+button {
+  color: white;
+  background-color: #37af65;
+  border: 0;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  display: block;
+}
+@media only screen and (min-width: 567px) {
+  form {
+    width: 80%;
+  }
+}
